@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>by meerbi.design</title>
+<style id="applicationStylesheet" type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+	display:  none;
+	user-select: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+* {
+	font-family: Poppins;
+}
+	.mediaViewInfo {
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Canvas;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Canvas {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Canvas;
+		--web-view-id: Canvas;
+		--web-scale-to-fit: true;
+		--web-scale-to-fit-type: width;
+		--web-enable-scale-up: true;
+		--web-scale-on-resize: true;
+		--web-center-vertically: true;
+		--web-enable-deep-linking: true;
+	}
+	#banking {
+		position: absolute;
+		width: 1079px;
+		height: 486px;
+		left: 421px;
+		top: 297px;
+		overflow: visible;
+	}
+	#main {
+		position: absolute;
+		width: 1079px;
+		height: 486px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#header {
+		position: absolute;
+		width: 56.8px;
+		height: 109.6px;
+		left: 93.825px;
+		top: 209.4px;
+		overflow: visible;
+	}
+	#Logo_Transparent {
+		position: absolute;
+		width: 56.8px;
+		height: 67.2px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#CORLONE_CITY {
+		left: 8.15px;
+		top: 82.6px;
+		position: absolute;
+		overflow: visible;
+		width: 49px;
+		white-space: nowrap;
+		line-height: 12px;
+		margin-top: -1px;
+		text-align: center;
+		font-family: Poppins-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 10px;
+		color: rgba(8,157,251,1);
+		letter-spacing: -0.05px;
+	}
+	#close {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		left: 1032px;
+		top: 18px;
+		overflow: visible;
+	}
+	#corleonee_3 {
+		fill: rgba(13,13,13,1);
+	}
+	.corleonee_3 {
+		position: absolute;
+		overflow: visible;
+		width: 25px;
+		height: 25px;
+		left: 0px;
+		top: 0px;
+	}
+	#X {
+		left: 7.783px;
+		top: 7.246px;
+		position: absolute;
+		overflow: visible;
+		width: 11px;
+		white-space: nowrap;
+		line-height: 14.583330154418945px;
+		margin-top: -0.7830700874328613px;
+		text-align: center;
+		font-style: normal;
+		font-weight: Bold;
+		font-size: 13.017189979553223px;
+		color: rgba(8,157,251,1);
+	}
+	#cardd {
+		position: absolute;
+		width: 280px;
+		height: 200.75px;
+		left: 708px;
+		top: 77px;
+		overflow: visible;
+	}
+	#Kontostand {
+		left: 48.891px;
+		top: 176.75px;
+		position: absolute;
+		overflow: visible;
+		width: 74px;
+		white-space: nowrap;
+		line-height: 16.80000114440918px;
+		margin-top: -1.4000005722045898px;
+		text-align: left;
+		font-family: MyriadPro-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(137,153,169,1);
+		letter-spacing: 0.2px;
+	}
+	#ID140000_ {
+		left: 137.891px;
+		top: 172.75px;
+		position: absolute;
+		overflow: visible;
+		width: 96px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -2px;
+		text-align: right;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#card {
+		position: absolute;
+		width: 280px;
+		height: 160px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Text {
+		position: absolute;
+		width: 234px;
+		height: 75px;
+		left: 19.004px;
+		top: 66px;
+		overflow: visible;
+	}
+	#ID1234_5678_2364_4568_ {
+		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.349));
+		left: 36px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 184px;
+		white-space: nowrap;
+		line-height: 20.400001525878906px;
+		margin-top: -1.7000007629394531px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#meerbdesign {
+		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.349));
+		left: 0px;
+		top: 58px;
+		position: absolute;
+		overflow: visible;
+		width: 85px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#ID0720 {
+		filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.349));
+		left: 198px;
+		top: 58px;
+		position: absolute;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: left;
+		font-family: Poppins-Medium;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.1px;
+	}
+	#inputts {
+		position: absolute;
+		width: 740px;
+		height: 132px;
+		left: 292px;
+		top: 312px;
+		overflow: visible;
+	}
+	#abheben {
+		position: absolute;
+		width: 363px;
+		height: 57px;
+		left: 377px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_3 {
+		fill: rgba(25,25,25,1);
+	}
+	.Rounded_Rectangle_3 {
+		position: absolute;
+		overflow: visible;
+		width: 363px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#GELD_ABHEBEN {
+		left: 28.891px;
+		top: 20.75px;
+		position: absolute;
+		overflow: visible;
+		width: 88px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#Abheben_ {
+		left: 291.011px;
+		top: 18.75px;
+		position: absolute;
+		overflow: visible;
+		width: 57px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(8,182,253,1);
+		letter-spacing: 0.2px;
+	}
+	#Input {
+		position: absolute;
+		width: 113px;
+		height: 21.25px;
+		left: 168px;
+		top: 16.75px;
+		overflow: visible;
+	}
+	#ID0000_ {
+		opacity: 1;
+		left: 57.031px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 16.80000114440918px;
+		margin-top: -1.4000005722045898px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(137,153,169,1);
+		letter-spacing: 0.2px;
+	}
+	#Shape_7 {
+		opacity: 0.2;
+		fill: rgba(137,153,169,1);
+	}
+	.Shape_7 {
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		height: 2px;
+		left: 0px;
+		top: 19.25px;
+	}
+	#einzahlen {
+		position: absolute;
+		width: 363px;
+		height: 57px;
+		left: 377px;
+		top: 75px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_3_ {
+		fill: rgba(25,25,25,1);
+	}
+	.Rounded_Rectangle_3_ {
+		position: absolute;
+		overflow: visible;
+		width: 363px;
+		height: 57px;
+		left: 0px;
+		top: 0px;
+	}
+	#GELD_EINZAHLEN {
+		left: 28.891px;
+		top: 20.75px;
+		position: absolute;
+		overflow: visible;
+		width: 97px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#Einzahlen_ {
+		left: 290.011px;
+		top: 18.75px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(8,182,253,1);
+		letter-spacing: 0.2px;
+	}
+	#Input_ {
+		position: absolute;
+		width: 113px;
+		height: 21.25px;
+		left: 168px;
+		top: 16.75px;
+		overflow: visible;
+	}
+	#ID0000__ {
+		opacity: 1;
+		left: 57.031px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 16.80000114440918px;
+		margin-top: -1.4000005722045898px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(137,153,169,1);
+		letter-spacing: 0.2px;
+	}
+	#Shape_7_ba {
+		opacity: 0.2;
+		fill: rgba(137,153,169,1);
+	}
+	.Shape_7_ba {
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		height: 2px;
+		left: 0px;
+		top: 19.25px;
+	}
+	#einzahlen_bb {
+		position: absolute;
+		width: 363px;
+		height: 132px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Rounded_Rectangle_3_bc {
+		fill: rgba(25,25,25,1);
+	}
+	.Rounded_Rectangle_3_bc {
+		position: absolute;
+		overflow: visible;
+		width: 363px;
+		height: 132px;
+		left: 0px;
+		top: 0px;
+	}
+	#GELD_BERWEISEN {
+		left: 28.891px;
+		top: 20.75px;
+		position: absolute;
+		overflow: visible;
+		width: 108px;
+		white-space: nowrap;
+		line-height: 14.40000057220459px;
+		margin-top: -1.200000286102295px;
+		text-align: left;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.2px;
+	}
+	#BERWEISEN {
+		left: 140px;
+		top: 95.75px;
+		position: absolute;
+		overflow: visible;
+		width: 69px;
+		white-space: nowrap;
+		line-height: 13.200000762939453px;
+		margin-top: -1.1000003814697266px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		color: rgba(8,182,253,1);
+		letter-spacing: 0.2px;
+	}
+	#Input_bf {
+		position: absolute;
+		width: 113px;
+		height: 21.25px;
+		left: 168px;
+		top: 16.75px;
+		overflow: visible;
+	}
+	#ID0000__bg {
+		opacity: 1;
+		left: 57.031px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 53px;
+		white-space: nowrap;
+		line-height: 16.80000114440918px;
+		margin-top: -1.4000005722045898px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(137,153,169,1);
+		letter-spacing: 0.2px;
+	}
+	#Shape_7_bh {
+		opacity: 0.2;
+		fill: rgba(137,153,169,1);
+	}
+	.Shape_7_bh {
+		position: absolute;
+		overflow: visible;
+		width: 113px;
+		height: 2px;
+		left: 0px;
+		top: 19.25px;
+	}
+	#Input_bi {
+		position: absolute;
+		width: 253px;
+		height: 21.25px;
+		left: 29px;
+		top: 56.75px;
+		overflow: visible;
+	}
+	#EMPFNGER {
+		opacity: 1;
+		left: 168.031px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		line-height: 16.80000114440918px;
+		margin-top: -1.4000005722045898px;
+		text-align: center;
+		font-family: Poppins-Regular;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		color: rgba(137,153,169,1);
+		letter-spacing: 0.2px;
+	}
+	#Shape_7_bk {
+		opacity: 0.2;
+		fill: rgba(137,153,169,1);
+	}
+	.Shape_7_bk {
+		position: absolute;
+		overflow: visible;
+		width: 253px;
+		height: 2px;
+		left: 0px;
+		top: 19.25px;
+	}
+	#graph {
+		position: absolute;
+		width: 385px;
+		height: 164px;
+		left: 292px;
+		top: 90px;
+		overflow: visible;
+	}
+
+	textarea:focus, input:focus{
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  background: rgb(43, 39, 39);
+  margin: 0;
+  border: 0;
+}
+#amount,
+#amountw,
+#amountt,
+#to {
+	z-index: 100;
+    background: transparent;
+    outline: none;
+    font-size: 0.7rem;
+    color: #ababab;
+    margin-left: -15px;
+	margin-top: -5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    text-align: left;
+    width: 50px;
+}
+button{
+	cursor: pointer;
+	border: 0;
+}
+.btn{
+	background-color: transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#08b1fd;
+	font-size:13px;
+	margin-left: -28px;
+	margin-top: -6px;
+	padding:4px 22px;
+	text-decoration:none;
+
+}
+.btn:hover{
+	background-color: transparent;
+	color:#ababab;
+}
+</style>
+<script id="applicationScript" type="text/javascript" src="rescale.js"></script>
+</head>
+<body>
+<div id="Canvas">
+	<div id="banking">
+		<img id="main" src="https://cdn.discordapp.com/attachments/788240573382787114/871471656395227186/main.png">
+			
+		<div id="header">
+			<img id="Logo_Transparent" src="https://cdn.discordapp.com/attachments/678367655413153802/942169444459905024/33leakswasserzeichen.png">
+				
+			<div id="CORLONE_CITY">
+				<span>CORLEONE</span><br><span style="color:rgba(255,255,255,1);">CITY</span>
+			</div>
+		</div>
+		<button class="btn-sign-out">
+			<div id="close">
+				<svg class="corleonee_3">
+					<rect id="corleonee_3" rx="5" ry="5" x="0" y="0" width="25" height="25">
+					</rect>
+				</svg>
+				<div id="X">
+					<span>X</span>
+				</div>
+			</div>
+		</button>
+		<div id="cardd">
+			<div id="Kontostand">
+				<span>Kontostand</span>
+			</div>
+			<div id="ID140000_">
+				<span style="margin-left: -5px;" class="money"><span class="curbalance"></span><b><span class="dollars"> $</span>
+			</div>
+			<img id="card" src="https://cdn.discordapp.com/attachments/788240573382787114/871471652796526642/card.png">
+				
+			<div id="Text">
+				<div id="ID1234_5678_2364_4568_">
+					<span>3465 7352 2578 8235 </span>
+				</div>
+				<div id="meerbdesign">
+					<span class="username1"></b></span>
+				</div>
+				<div id="ID0720">
+					<span>07/22</span>
+				</div>
+			</div>
+		</div>
+		<div id="inputts">
+			<form id="withdraw1">
+				<div id="abheben">
+					<svg class="Rounded_Rectangle_3">
+						<rect id="Rounded_Rectangle_3" rx="15" ry="15" x="0" y="0" width="363" height="57">
+						</rect>
+					</svg>
+					<div id="GELD_ABHEBEN">
+						<span>GELD ABHEBEN</span>
+					</div>
+					<div id="Abheben_">
+						<button class="btn btn-green" type="submit">
+						<span>Abheben</span>
+					</div>
+					<div id="Input">
+						<div id="ID0000_">
+							<input id="amountw" type="number" placeholder="0 $">
+						</div>
+						<svg class="Shape_7">
+							<rect id="Shape_7" rx="0" ry="0" x="0" y="0" width="113" height="2">
+							</rect>
+						</svg>
+					</div>
+				</div>
+			</form>
+			<form id="deposit1">
+				<div id="einzahlen">
+					<svg class="Rounded_Rectangle_3_">
+						<rect id="Rounded_Rectangle_3_" rx="15" ry="15" x="0" y="0" width="363" height="57">
+						</rect>
+					</svg>
+					<div id="GELD_EINZAHLEN">
+						<span>GELD EINZAHLEN</span>
+					</div>
+					<div id="Einzahlen_">
+						<button class="btn" type="submit">
+						<span>Einzahlen</span>
+					</div>
+					<div id="Input_">
+						<div id="ID0000__">
+							<b><input id="amount" type="number" placeholder="0 $"></b>
+						</div>
+						<svg class="Shape_7_ba">
+							<rect id="Shape_7_ba" rx="0" ry="0" x="0" y="0" width="113" height="2">
+							</rect>
+						</svg>
+					</div>
+				</div>
+			</form>
+			<form id="transfer1">
+				<div id="einzahlen_bb">
+					<svg class="Rounded_Rectangle_3_bc">
+						<rect id="Rounded_Rectangle_3_bc" rx="15" ry="15" x="0" y="0" width="363" height="132">
+						</rect>
+					</svg>
+					<div id="GELD_BERWEISEN">
+						<span>GELD ÜBERWEISEN</span>
+					</div>
+					<div id="BERWEISEN">
+						<button class="btn btn-green" type="submit">
+						<span>ÜBERWEISEN</span>
+					</div>
+					<div id="Input_bf">
+						<div id="ID0000__bg">
+							<input id="amountt" type="number" placeholder="0 $">
+						</div>
+						<svg class="Shape_7_bh">
+							<rect id="Shape_7_bh" rx="0" ry="0" x="0" y="0" width="113" height="2">
+							</rect>
+						</svg>
+					</div>
+					<div id="Input_bi">
+						<div id="EMPFNGER">
+							<input id="to"  type="text" placeholder="ID">
+						</div>
+						<svg class="Shape_7_bk">
+							<rect id="Shape_7_bk" rx="0" ry="0" x="0" y="0" width="253" height="2">
+							</rect>
+						</svg>
+					</div>
+				</div>
+
+			</form>
+		</div>
+		<img id="graph" src="https://cdn.discordapp.com/attachments/788240573382787114/871471653924765796/graph.png">
+			
+	</div>
+</div>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    	<script type="text/javascript">
+    		$(function() {
+				window.addEventListener('message', function(event) {
+					if (event.data.type === "openGeneral"){
+		                $('body').show();
+					} else if(event.data.type === "balanceHUD") {
+							$('.username1').html(event.data.player);
+							$('.curbalance').html(event.data.balance);
+					} else if (event.data.type === "closeAll"){
+		                $('body').hide();
+					}
+					else if (event.data.type === "result") {
+						if (event.data.t == "success")
+							$("#result").attr('class', 'alert-green');
+						else
+							$("#result").attr('class', 'alert-orange');
+						$("#result").html(event.data.m).show().delay(5000).fadeOut();
+					}
+				});
+			});
+    		$('.btn-sign-out').click(function(){
+	            $('body').hide();
+	            $.post('http://corleone_bank/NUIFocusOff', JSON.stringify({}));
+	        })
+	        $("#deposit1").submit(function(e) {
+		        e.preventDefault(); 
+		        $.post('http://corleone_bank/deposit', JSON.stringify({
+		            amount: $("#amount").val()
+		        }));
+			});
+			$("#transfer1").submit(function(e) {
+		        e.preventDefault(); 
+		        $.post('http://corleone_bank/transfer', JSON.stringify({
+					to: $("#to").val(),
+		            amountt: $("#amountt").val()
+		        }));
+			});
+			$("#withdraw1").submit(function(e) {
+				e.preventDefault(); 
+		        $.post('http://corleone_bank/withdrawl', JSON.stringify({
+		            amountw: $("#amountw").val()
+		        }));
+			});
+			document.onkeyup = function(data){
+		        if (data.which == 27){
+		            $('body').hide();
+		            $.post('http://corleone_bank/NUIFocusOff', JSON.stringify({}));
+		        }
+		    }
+    	</script>
+</body>
+</html>
